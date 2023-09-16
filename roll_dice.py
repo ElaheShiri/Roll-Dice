@@ -1,9 +1,4 @@
 from random import randint
-
-def roll_dice():
-    return randint(1,6)
-
-# print(roll_dice())
     
 def dice_shape(number): 
     if number == 1:
@@ -58,13 +53,8 @@ def dice_shape(number):
 """
     else :
         return "error"
-    
-#print(dice_shape())
 
 def dice():
-
-
-    
-    return dice_shape(roll_dice())
+    return dice_shape(randint(1,6))
 
 print(dice())
