@@ -1,6 +1,7 @@
 from random import randint
-    
-def dice_shape(number): 
+
+
+def dice_shape(number):
     if number == 1:
         return """
         ===========
@@ -8,7 +9,7 @@ def dice_shape(number):
         |    0    |
         |         |
         ===========
-        """  
+        """
     elif number == 2:
         return """
         ===========
@@ -51,10 +52,12 @@ def dice_shape(number):
         ===========
     
 """
-    else :
+    else:
         return "error"
 
+
 def dice():
-    return dice_shape(randint(1,6))
+    return dice_shape(randint(1, 6))
+
 
 print(dice())
